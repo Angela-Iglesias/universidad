@@ -10,6 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
+// endpoint para ver todos los estudiantes
 app.get("/estudiantes", (req, res) => {
     connection.query("SELECT legajo, nombre FROM estudiantes", (error, resultado) => {
         res.json(resultado);
