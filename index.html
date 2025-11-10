@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Proyecto Universidad</title>
+</head>
+
+<body onload ="verEstudiantes()">
+    <h1>UNIVERSIDAD</h1>
+    <hr> 
+    <h1>Estudiantes</h1>
+    <p id="estudiantes"></p>
+    
+    <h2>Consultar los datos de un estudiante</h2>
+    <label for="estudiante">Introduce el legajo del estudiante que quieres consultar:</label>
+    <input type="number" id="estudiante">
+    <button onclick="verEstudiante()">Enviar</button>
+    <p id="resultadoEstudiante"></p>
+    <hr>
+
+    <h2>Introducir un nuevo Estudiante</h2>
+    <form action="">
+        <label for="nombre">Nombre del Estudiante:</label>
+        <input type="text" id="nombre">
+        <label for="email">Email del Estudiante:</label>
+        <input type="text" id="email">
+    </form>
+    <button onclick="introducirEstudiante()">Enviar</button>
+    <hr>
+
+     <h2>Introducir la nota de un examen de un Estudiante</h2>
+    <form action="">
+        <label for="legajoEstudiante">Legajo del Estudiante:</label>
+        <input type="number" id="legajoEstudiante">
+        <label for="codigoCurso">Código del Curso:</label>
+        <input type="number" id="codigoCurso">
+        <label for="nota">Nota del Examen:</label>
+        <input type="number" id="nota">
+        <label for="fecha">Fecha del Examen:</label>
+        <input type="date" id="fecha">
+    </form>
+    <button onclick="introducirNota()">Enviar</button>
+    <p id="mostrarNotas"></p>
+    <hr>
+
+    <h2>Modificar la nota de un examen de un Estudiante</h2>
+    <label for="idNota">Introduce el id de la nota a modificar:</label>
+    <input type="number" id="idNota">
+
+    <form action="">
+        <label for="legajoEstudianteModificar">Legajo del Estudiante:</label>
+        <input type="number" id="legajoEstudianteModificar">
+        <label for="codigoCursoModificar">Código del Curso:</label>
+        <input type="number" id="codigoCursoModificar">
+        <label for="notaModificar">Nota del Examen:</label>
+        <input type="number" id="notaModificar">
+        <label for="fechaModificar">Fecha del Examen:</label>
+        <input type="date" id="fechaModificar">
+    </form>
+    <button onclick="modificarNota()">Enviar</button>
+    <hr>
+
+    <h2>Eliminar nota de un Examen</h2>
+    <label for="idNotaEliminar">Introduce el id de la nota del examen que quieres eliminar:</label>
+    <input type="number" id="idNotaEliminar">
+    <button onclick="eliminarNota()">Eliminar</button>
+    <hr>
+
+    <h2>Consultar exámenes aprobados de un curso</h2>
+    <label for="codigoC">Introduce el código del curso del que quieres ver las notas aprobadas:</label>
+    <input type="number" id="codigoC">
+    <button onclick="consultarExamenesCurso()">Consultar Exámenes de un Curso</button>
+    <p id="examenesAprobadosCurso"></p>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
