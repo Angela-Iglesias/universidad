@@ -17,7 +17,7 @@ app.get("/estudiantes", (req, res) => {
     });
 });
 
-// endpoint para ver un estudiante según su legajo
+// endpoint para ver un estudiante según su legajo.
 app.get("/estudiantes/:legajo", (req, res)=> {
     const legajo = req.params.legajo;
     connection.query("SELECT * FROM estudiantes where legajo = ?", legajo, (error, respuesta) => {
@@ -26,6 +26,7 @@ app.get("/estudiantes/:legajo", (req, res)=> {
     })
 });
 
+// endpoint para insertar un estudiante
 app.post("/estudiantes/create", (req, res) => {
     const {nombre, email} = req.body;
     connection.query("INSERT INTO estudiantes (nombre, email) VALUES (?,?)", [nombre, email], (error,resultado) => {
