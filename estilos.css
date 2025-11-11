@@ -1,5 +1,9 @@
 #titulo1 {
-    color: blue;
+    color: rgb(0, 0, 176);
+}
+
+#subtitulo {
+    color: rgb(105, 63, 169);
 }
 
 body {
