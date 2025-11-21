@@ -16,3 +16,8 @@ body {
 h2 {
     color: rgb(73, 93, 3);
 }
+
+img {
+    width: 50px;
+    height: 60px;
+}
