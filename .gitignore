@@ -1,5 +1,5 @@
 node_modules/
 
-// Ignorar imágenes
+# Ignorar imágenes
 *.jpg
 *.png
