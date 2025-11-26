@@ -34,7 +34,6 @@ La aplicación está compuesta por los siguientes elementos principales:
 ### Base de Datos
 
 * La base de datos MySQL contiene al menos dos tablas:
-
   * `estudiantes` (legajo, nombre, email)
   * `notas` (id, legajo_estudiante, codigo_curso, nota, fecha)
 * La conexión con la base de datos se establece mediante el archivo `connection.js`.
